@@ -263,7 +263,7 @@ footer ul li a:hover{
   color: black;
   background-color: black;
 }
-.viewplane:focus,button:focus{
+.viewplane:focus,button:focus,a:focus,a:hover{
     outline: none;
     border:none;
 }

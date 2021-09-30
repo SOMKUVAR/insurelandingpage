@@ -1,0 +1,549 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    font-weight: 400;
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    display: block;
+}
+/*********
+typography
+**********/
+li a ,.list div a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h1,h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 400;
+}
+h2{
+    font-size:2rem;
+}
+.content h1{
+    color: white;
+    margin-right: 3rem;
+}
+button{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.content p{
+    line-height: 1.6rem;
+}
+.box2 p{
+    line-height: 1.6rem;
+}
+.list{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/***********
+main
+************/
+/*******
+box1
+********/
+.box1{
+    background-image: url("./images/bg-pattern-intro-left-desktop.svg") ,linear-gradient(to bottom,hsl(256, 26%, 20%) 65%,white 35%);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 9rem;
+    width: 100%;
+    padding-bottom: 7rem;
+}
+.bac{
+    position: absolute;
+    top: -.2rem;
+    right: 0rem;
+    z-index: 1;
+    object-fit: scale-down;
+}
+.content{
+    width: 50%;
+    padding: 6rem 1rem;
+    color: hsl(280, 7%, 82%);
+}
+.img{
+    width:50%;
+    padding: 6rem 1rem;
+    z-index:0;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    width: 150px;
+    margin-bottom:2.5rem;
+}
+.content p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+button{
+    padding: .7rem 2rem;
+    border: 2px solid hsl(280, 7%, 82%);
+    background-color: transparent;
+    color: hsl(280, 7%, 82%);
+}
+.beforebox2{
+    width: 150px;
+    margin-top: -2rem;
+    margin-left: 10rem;
+}
+/***************
+box2
+***************/
+.box2{
+    padding: 1rem 10rem;
+}
+.flex{
+    display: flex;
+
+}
+.box2 h1{
+    margin-bottom: 3rem;
+}
+.boxes{
+    margin-right: 2rem;
+}
+.icon{
+    margin: 1rem 0;
+}
+h2{
+    margin: 1rem 0;
+}
+.box2 p{
+    color: hsl(273, 4%, 51%);
+}
+.imgmob img{
+   display: none;
+}
+/**********
+box3
+**********/
+.box3{
+    margin: 10rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background: url("./images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: hsl(256, 26%, 20%);
+    color:hsl(280, 7%, 82%);
+}
+.box3 div{
+    padding: 3rem;
+}
+/**********
+header
+**********/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:hsl(0, 0%, 98%);
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    width:100%;
+    padding: 2rem 10rem;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+header li{
+    margin-left: 2rem;
+}
+header li a{
+    color: hsl(273, 4%, 51%);
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggle-bar{
+    display: none;
+}
+.viewplane{
+    padding: .4rem 1rem;
+    color: black;
+    border : 2px solid black;
+    outline: none;
+}
+nav .viewplane{
+   border : 2px solid black;
+}
+/**********
+footer
+***********/
+footer{
+    background: url("./images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-color:hsl(0, 0%, 98%);
+    padding: 0  10rem; 
+}
+.social{
+    border-bottom: 1px solid hsl(280, 7%, 82%);
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+footer li{
+    margin-left: 2rem;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list div{
+    margin-bottom: 1rem;
+}
+.list .head1{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: hsl(273, 4%, 51%);
+}
+.list div a{
+    color: hsl(270, 9%, 17%);
+}
+/***********
+hover
+***********/
+.viewplane:hover{
+    background-color: black;
+    color: white;
+}
+li a:hover{
+    color:black;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+li a:focus,.logo:focus{
+   border:none;
+   outline: none;
+}
+.list div a:hover{
+    text-decoration: underline;
+}
+footer ul li a:hover{
+  color: black;
+  background-color: black;
+}
+ @media(max-width:926px)
+{   
+
+     /*********
+     typography
+     **********/
+     h1{
+         font-size: 2.5rem;
+         line-height: 2.5rem;
+     }
+    /********
+    header
+    *********/
+    header{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 0;
+        box-sizing: border-box;
+    }
+   nav{
+        display: none;
+        padding: 3rem 0;
+        width: 100%;
+    }
+    header ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header li{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    header li a{
+        color: white;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 1rem;
+    }
+    /**********
+    toggle bar
+    ***********/
+    .toggle-bar{
+        position: absolute;
+        right: 1rem;
+        top: 1.4rem;
+        display: block;
+    }
+    .active{
+        display: block;
+        position: absolute;
+        margin-top: 3rem;
+        background-color: hsl(270, 9%, 17%);
+        background-image: url("./images/bg-pattern-mobile-nav.svg");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        color: white;
+        width: 100%;
+        padding-bottom: 16rem;
+    }
+    header li{
+       margin-left: 0;
+       width: 100%;
+    }
+    nav .viewplane{
+        padding: .5rem 5rem;
+        color: white;
+        border : 2px solid white;
+        outline: none;
+        margin-top: 2rem;
+    }
+    nav .viewplane:hover{
+        background-color: transparent;
+        color: white;
+        border : 2px solid white;
+    }
+    nav a:hover{
+        color: white;
+    }
+    /***********
+    box1
+    *************/
+    .box1{
+        flex-direction: column;
+         background-image: none;
+         margin: 0;
+         padding: 0;
+         border: none;
+    }
+    .content{
+        background-color: hsl(256, 26%, 20%);
+        background-image: url("./images/bg-pattern-intro-left-mobile.svg")
+        ,url("./images/bg-pattern-intro-right-mobile.svg")
+        ,linear-gradient(to bottom,hsl(256, 26%, 20%) 71%,white 29%);
+        background-position: top left,right bottom;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 1rem;
+        padding-bottom: 13rem;
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+    .content button{
+        margin-bottom: 3rem;
+    }
+    .content h1{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 4rem;
+    }
+    .content hr{
+        display: none;
+    }
+    .icon{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .imgmob{
+        width: 100%;
+        height: 100%;
+        order:-1;
+        margin: 0;
+        padding: 0;
+    }
+    .img img{
+       display: none;
+    }
+    .imgmob img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .bac{
+        display: none;
+    }
+    /**********
+    hr
+    ***********/
+    .bb2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        margin-top: -14rem;
+    }
+    .beforebox2{
+        width: 150px;
+        margin: 0;
+       
+    }
+    /**********
+    box2
+    ***********/
+    .flex{
+        flex-direction: column;
+    }
+    .box2,.box2 h1,.boxes,.icon{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .boxes{
+        margin:2rem 1rem;
+    }
+    .box2 h1{
+        margin: 3rem 0;
+    }
+    /********
+    box3
+    *********/
+    .box3{
+        background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        width: 100%;
+        margin: 3rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 2rem;
+    }
+    .box3 h1{
+        margin: 0;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .box3 div{
+        padding: 3rem 1rem;
+    }
+    /**********
+    footer
+    **********/
+    footer{
+        background-image: url("./images/bg-pattern-footer-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top left;  
+        padding: 0;
+    }
+    .social{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+    .social img{
+        margin-bottom: 2rem;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    footer ul{
+        margin: 0;
+    }
+    footer li{
+        margin-left: 1rem;
+    }
+    .list .head1{
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .list div{
+        text-align: center;
+    }
+} 
+@media(max-width: 926px) and (min-width: 500px){
+    .img{
+      order: -1;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .img img{
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        object-fit: cover;
+    }
+    .imgmob img{
+        display: none;
+    }
+    .content{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .box2{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+    .beforebox2{
+        margin-top: 10rem;
+    }
+
+  } 
+ @media(max-width: 1240px) and (min-width: 927px){
+    h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .box3{
+        margin: 5rem;
+    }
+    .box1,.box2,footer{
+        padding: 1rem 5rem;
+    }
+    .beforebox2{
+        margin-left: 5rem;
+        width: 97px;
+    }
+} 

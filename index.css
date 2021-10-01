@@ -69,7 +69,6 @@ box1
     width: 100%;
     padding-bottom: 7rem;
     box-sizing: border-box;
-    overflow: hidden;
 }
 .bac{
     position: absolute;
@@ -77,13 +76,11 @@ box1
     right: 0rem;
     z-index: 1;
     object-fit: scale-down;
-    overflow: hidden;
 }
 .content{
     width: 50%;
     padding: 6rem 1rem;
     color: hsl(280, 7%, 82%);
-    overflow: hidden;
 }
 .img{
     width:50%;
@@ -120,7 +117,6 @@ box2
 .box2{
     padding: 1rem 10rem;
     box-sizing: border-box;
-    overflow: hidden;
 }
 .flex{
     display: flex;
@@ -131,7 +127,6 @@ box2
 }
 .boxes{
     margin-right: 2rem;
-    overflow: hidden;
 }
 .icon{
     margin: 1rem 0;
@@ -174,7 +169,6 @@ header{
     z-index: 3;
     width:100%;
     padding: 2rem 10rem;
-    overflow: hidden;
 }
 header ul{
     list-style: none;
